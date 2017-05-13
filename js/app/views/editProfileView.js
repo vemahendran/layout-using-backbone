@@ -43,6 +43,9 @@ define([
 			// Hide the modal box
 			$('#editProfileModal').modal('hide');
 
+			// Clear form data
+			$(event.target).trigger("reset");
+
 			return false;
 		}
 
